@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Segment Sayfası</title>
+</head>
+
+<body>
+    <h1>Form Sayfası</h1>
+
+    <div th:each="item : ${items}">
+        <div class="item-box">
+            <p th:text="${item}">Item</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

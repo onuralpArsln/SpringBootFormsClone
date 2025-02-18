@@ -12,7 +12,6 @@ public class FormController {
 
     @GetMapping("/form")
     public String home() {
-        return "redirect:/form";
+        return "form"; // form.html Thymeleaf içindeki dosya
     }
-
 }
