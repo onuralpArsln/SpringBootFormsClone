@@ -3,12 +3,14 @@
 
 <head>
     <title>Segment Sayfası</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+
 </head>
 
 <body>
     <h1>Form Sayfası</h1>
 
-    <div th:each="item : ${items}">
+    <div class="container" th:each="item : ${items}">
         <div class="item-box">
             <p th:text="${item}">Item</p>
         </div>
